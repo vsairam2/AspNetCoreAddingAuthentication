@@ -13,7 +13,9 @@ namespace WishList.Model.AccountViewModels
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Required, DataType(DataType.Password), CompareAttribute("Password",ErrorMessage = "The New Password and Confirm New Password fields did not match.")]
+        [Required]
+        [DataType(DataType.Password)]
+        [Compare("Password")]
        
        
         public string ConfirmPassword { get; set; }
