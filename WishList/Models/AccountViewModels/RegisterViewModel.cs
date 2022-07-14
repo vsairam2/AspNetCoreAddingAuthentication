@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WishList.Model.AccountViewModels
+namespace WishList.Models.AccountViewModels
 {
     public class RegisterViewModel
     {
@@ -16,8 +16,6 @@ namespace WishList.Model.AccountViewModels
         [Required]
         [DataType(DataType.Password)]
         [Compare("Password")]
-       
-       
         public string ConfirmPassword { get; set; }
     }
 }
